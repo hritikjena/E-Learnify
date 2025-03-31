@@ -1,0 +1,446 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(to left, blue, black);
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+body.dark-mode .nav-links {
+    color: white;  /* Change text color to white when dark mode is active */
+    text-decoration: none;
+  }
+
+.heading {
+    padding: 0 ;
+    margin: 0;
+    justify-content: flex-start;
+}
+.no-underline {
+    text-decoration: none;
+    color: inherit; /* Ensures it inherits the parent text color */
+}
+h1{
+    font-size: 1.8rem;
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+}
+.header{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+section {
+    scroll-margin-top: 70px; /* Offset for the navbar */
+    padding: 20px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #ccc;/*will be removed after completion*/
+    background-color: lightpink;
+    position: relative;
+  
+}
+
+.nav-groups{
+    display: flex; /* Group navigation and login button */
+    align-items: center; /* Align both items vertically */
+    gap: 1rem;
+}
+
+.nav-links{
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    background-color: lightpink;
+    gap: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.2rem;
+}
+
+.buttons{
+    justify-content:flex-end;
+}
+
+.search-bar{
+    border-radius: 20px;
+    width: 150px;
+    height: 22px;
+    padding: 4px;
+    font-size: 14px;
+    outline: none;
+    box-shadow: none;
+    transition: all 0.3s ease;
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+}
+.search-bar:focus{
+    border-color: #007BFF;
+}
+.nav-links li{
+    display: inline;
+    float: right;
+}
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+li a{
+    display: block;
+    padding: 8px;
+}
+li a:hover {
+    background-color: white;
+  }
+
+
+/*login-btn starts*/
+.login-btn{
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: black;
+    border-radius: 18px;
+}
+.login-btn:hover{
+    background-color: rgb(8, 8, 126);
+}
+
+.modal{
+    display: none;
+    position:fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 70%;
+    height:50%;
+    overflow:auto;
+    background-color: rgb(0,0,0);  
+    background-color: rgba(0,0,0,0.4);    
+}
+
+.modal-content{
+    background-color: black;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    position:relative;
+}
+
+.close{
+    background-color: black;
+    margin: 15% auto;
+    padding: 10px;
+    width: 2px;
+}
+#submit{
+    color:black;
+}
+#username{
+    color:black;
+
+}
+
+#password{
+    color:black;
+}
+
+.close:hover,
+.close:focus {
+    background-color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*login-btn ends*/
+
+
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+  }
+  
+  .header.dark-mode {
+    background-color: #333;
+  }
+  
+  .navbar.dark-mode {
+    border-bottom: 2px solid #555;
+  }
+  
+  .search-bar.dark-mode {
+    background-color: #444;
+    color: white;
+  }
+  
+  .login-btn.dark-mode {
+    background-color: #555;
+    color: white;
+  }
+  
+  .theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .theme-toggle:hover{
+    background-color: black;
+    border-radius: 15px;
+  }
+
+/*HomePage*/
+
+.homepage{
+    background-image:linear-gradient(to left, blue, black);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    padding: 20px;;
+}
+.home-text{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 60px;
+    animation: fadeIn 2s ease-in-out, moveUp 2s ease-in-out;
+}
+#sub-text-container{
+    white-space: nowrap;
+    color:white;
+    font-size: 18px;
+    overflow: hidden;
+    text-align: left;
+    width: 52%;
+}
+#sub-text{
+    display: inline-block;
+    text-align: left;
+    animation: revealWords 2s steps(10, end) forwards;
+}
+
+@keyframes revealWords {
+    from{
+        width: 0%;
+    }
+    to{
+        width:100%;
+    }
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes moveUp{
+    0%{
+        transform: translateY(50px) ;
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+.container{
+    height: 100vh;
+    justify-content: center;
+    align-items:baseline;
+    padding-top: 15px;
+
+}
+
+.cta-btn{
+    color: black;
+}
+
+/*courses*/
+
+.enroll-btn{
+    color:black;
+}
+
+.courses-container{
+    text-align:center;
+    padding: 5px;
+    max-width:1200px;
+    margin: 0 auto;
+
+}
+.course-grid{
+    display:grid;
+    grid-template-columns: repeat(4, minmax(200px,1fr));
+    justify-content:center;
+    gap:30px;
+    padding:20px;
+}
+
+.course-card{
+    background: black;
+    width:300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    text-align:center;
+    padding: 20px;
+}
+
+.course-card:hover{
+    transform: scale(1.05);
+}
+
+.course-icon{
+    margin-bottom:10px;
+    font-size:50px
+}
+
+.web-dev{color: #61DAFB;}
+.data-sci{color: #FFD700;}
+.ai{color: #FF6347;}
+
+/*courses_ends*/
+
+/*contact*/
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 20px; /* Space between the columns */
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contact-info, .contact-form {
+    background: #222; /* Box background color */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for the boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for better visibility */
+}
+
+.contact-hero {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+}
+
+.contact-hero h1 {
+    font-size: 36px;
+}
+
+.contact-hero p {
+    font-size: 18px;
+}
+
+.contact-info {
+    width: 45%;
+    text-align: left;
+    background: none; /* Remove dark background */
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+
+.info-box{
+    font-size: 28px;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    font-size: 30px; /* Bigger icons */
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
+.contact-form {
+    text-align: center;
+    padding: 40px;
+    background: black;
+    color: white;
+}
+
+
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: black;
+}
+
+.send-btn {
+    background: #6a11cb;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.send-btn:hover {
+    background: #2575fc;
+}
+
+
+
+/*contact ends*/

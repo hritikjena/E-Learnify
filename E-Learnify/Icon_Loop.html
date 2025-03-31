@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seamless Icon Loop</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-color: #f4f4f4;
+    }
+
+    .container-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+    }
+
+    .container {
+      display: flex;
+      animation: moveLeft 10s linear infinite;
+    }
+
+    .icon {
+      width: 50px;
+      margin: 0 10px;
+    }
+
+    /* Animation keyframes for circular effect */
+    @keyframes moveLeft {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container-wrapper">
+    <!-- Main Container -->
+    <div class="container">
+      <img src="intel-logo.png" alt="Intel" class="icon">
+      <img src="nvidia-logo.png" alt="NVIDIA" class="icon">
+      <img src="github-logo.png" alt="GitHub" class="icon">
+      <img src="behance-logo.png" alt="Behance" class="icon">
+      <img src="digital-ocean-logo.png" alt="Digital Ocean" class="icon">
+    </div>
+  </div>
+
+  <script>
+    // JavaScript to make the animation circular
+    const container = document.querySelector(".container");
+
+    // Clone icons to create an infinite loop effect
+    const icons = container.innerHTML;
+    container.innerHTML += icons;
+  </script>
+</body>
+</html>

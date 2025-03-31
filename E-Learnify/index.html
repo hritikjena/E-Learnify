@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform</title>
+    <!-- Add CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add Google Fonts (optional) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+            <nav class="navbar">
+                <div class="heading">
+                    <h1><a href="#home" class="no-underline" onclick="window.scrollTo(0, 0); return false;">E-Learnify</a></h1>
+                </div>
+                <div class="nav-groups">
+                    <ul class="nav-links">
+                        <li><a href="#home" class="no-underline" onclick="window.scrollTo(0, 0); return false;">Home</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#Quizes">Quizes</a></li>
+                        <li><a href="profile.html" target="_blank">Profile</a></li>
+                        <li><a href="teachers.html" target="_blank">For Teachers</a></li>
+                        <li><a href="#footer">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="buttons">
+                    <button id="theme-toggle" class="theme-toggle">🌙</button> 
+                    <input type="text" class="search-bar" placeholder="Search...">
+                    <button id="loginBtn" class="login-btn"><b><a href="login.html">Login/signUp</a></b></button>
+                </div>
+            </nav>
+    </header>
+
+    <!--Home Section-->
+    <section class="homepage">
+        <div class="home-text"><b>Welcome to E-learnify</b></div>
+        <div id="sub-text-container">
+            <span id="sub-text">We promise not to bore you… much. Learning here is 90% fun and 10% pretending to be Einstein</span>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Learn and Earn Badges!</h2>
+            <p>Boost your skills with gamified learning. Join now to start your journey.</p>
+            <button class="cta-btn">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="courses-container">
+            <h2>Available Courses</h2>
+            <div class="course-grid">
+                <div class="course-card">
+                    <div class="course-icon web-dev">&#128187;</div>
+                    <h3>Web Development</h3>
+                    <p>Learn HTML, CSS, JavaScript, and more.</p>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon data-sci">&#128202;</div>
+                    <h3>Data Science</h3>
+                    <p>Master Python, Machine Learning, and Data Analysis.</p>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon ai">&#127918;</div>
+                    <h3>Artificial Intelligence</h3>
+                    <p>Analyze data with Python, R, and powerful libraries.</p>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon C-lang">&#127314;</div>
+                    <h3>C language</h3>
+                    <p>New powerful modules of C language and their algorithms.</p>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon Cpp">&#127314;&#10133;&#10133;</div>
+                    <h3>C++ language</h3>
+                    <p>New powerful modules of C++ language and their algorithms.</p>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon java">&#9749;</div>
+                    <h3>Java</h3>
+                    <p>Learn Java programming language and its modules.</p>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon DBMS">&#128452;</div>
+                    <h3>Database Management</h3>
+                    <p>Master the fundamentals of database management.</p>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon OS">&#128421;</div>
+                    <h3>Operating System</h3>
+                    <p>Understand the core concepts of operating system.</p>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon CN">&#127760;</div>
+                    <h3>Computer Networks</h3>
+                    <p>Understand networking concepts and protocols.</p>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon CG">&#127912;</div>
+                    <h3>Computer Graphics</h3>
+                    <p>Explore rendering and 3D modeling.</p>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon SE">&#128736;</div>
+                    <h3>Software Engineering</h3>
+                    <p>Discover the principles of software engineering.</p>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon NT">&#128290;</div>
+                    <h3>Numericaearnl Technique</h3>
+                    <p>Learn numerical methods and techniques for solving mathematical problems.</p>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon DS">&#128194;</div>
+                    <h3>Data Structure in C++</h3>
+                    <p>Learn data structures in C++ and enhance your problem-solving skills.</p>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon Algo">&#129518;</div>
+                    <h3>algorithms</h3>
+                    <p>Master the art of problem-solving with algorithms and their applications.</p>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon DL">&#128268;</div>
+                    <h3>Digital Logic</h3>
+                    <p>Understand the fundamentals of digital circuits and logic design.</p>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon py">&#128013;</div>
+                    <h3>Python Programming</h3>
+                    <p>Learn Python programming language, its libraries, and frameworks like Django and Flask.</p>
+                    <button class="enroll-btn">Enroll Now</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="footer">
+        <section class="contact-hero">
+            <h1>📞 Get in Touch with Us</h1>
+            <p>Have questions? Feel free to reach out.</p>
+        </section>
+        <section class="contact-container">
+            <section class="contacts-info">
+                <div class="info-box">
+                    <h3>📍 Address</h3>
+                    <p>Gabasahi, Bhadrak, Odisha, India <br> Pincode:756100</p>
+                </div>
+                <div class="info-box">
+                    <h3>📧 Email</h3>
+                    <p>hritikjn6@gmail.com</p>
+                </div>
+                <div class="info-box">
+                    <h3>📞 Phone</h3>
+                    <p>+91 7064013309</p>
+                </div>
+            </section>
+            <section class="contact-form">
+                <h2>📬 Send Us a Message</h2>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="send-btn">Send Message</button>
+                </form>
+            </section>
+        </section>
+        <section class="social">
+            <div class="social-links">
+                <a href="https://www.instagram.com/hritik_offl/" target="_blank" class="insta">📷 Instagram</a>
+                <a href="https://www.linkedin.com/in/hritik-jena-320821256/" target="_blank" class="linkedin">🔗 LinkedIn</a>
+                <a href="https://github.com/hritikjena" target="_blank" class="github">💻 GitHub</a>
+            </div>
+        </section>
+        <p style="text-align: center; margin-top: 20px;">&copy; 2025 E-Learnify. All rights reserved.</p>
+    </footer>
+    <script src="logic.js" defer></script>
+</body>
+</html>
