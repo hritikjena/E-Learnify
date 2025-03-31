@@ -1,0 +1,128 @@
+/* Updated styles for teachers.html */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to left, blue, black);
+    color: white;
+}
+
+header {
+    background-color: lightpink;
+    color: white;
+    padding: 1px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0.5rem 0;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background: linear-gradient(to left, blue, black);
+    color: #6c757d;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.teachers-hero {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to left, blue, black);
+    color: white;
+}
+
+.teachers-hero h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.teachers-hero p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#research-upload {
+    text-align: center;
+    padding: 10px;
+    background: #fcfcff;
+    color: #444;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+}
+
+#upload-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#upload-btn:hover {
+    background-color: #0056b3;
+}
+
+.research-list {
+    padding: 40px;
+    background: black;
+    color: white;
+}
+
+.research-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.research-card {
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.read-btn {
+    background: #ff4757;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.read-btn:hover {
+    background: #e84118;
+}
