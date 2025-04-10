@@ -4,53 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="P_Styles.css">
 </head>
 <body class="Profile-body">
-    <!-- Profile Section -->
-    <section id="profile" class="profile">
-        <div class="container">
-            <h2>Your Profile</h2>
-            <p>Welcome back, [Username]!</p>
-            <ul>
-                <li><strong>Courses Enrolled:</strong> 3</li>
-                <li><strong>Badges Earned:</strong> 5</li>
-                <li><strong>Total Points:</strong> 750</li>
-            </ul>
+    <body>
+        <div class="sidebar">
+            <a href="#">Profile</a>
+            <a href="#">Badges</a>
+            <a href="#">Quizzes</a>
+            <a href="index.html#courses">Courses</a>
+            <a href="#">Invite</a>
+            <a href="#">Settings</a>
+            <a href="#">Logout</a>
         </div>
-    </section>
-
-    <!-- Leaderboard Section -->
-    <section id="leaderboard" class="leaderboard">
-        <div class="container">
-            <h2>Leaderboard</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Rank</th>
-                        <th>Name</th>
-                        <th>Points</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Alice</td>
-                        <td>1200</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Bob</td>
-                        <td>1100</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Charlie</td>
-                        <td>1050</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="main-content">
+            <div class="top-section">
+                <div class="profile-section">
+                    <img src="DSC_0475 (1).JPG" alt="Profile Picture">
+                    <h3>hritikjn6</h3>
+                    <button>Edit Profile</button>
+                </div>
+                <div class="badges-section">
+                    <h3>Badges</h3>
+                    <p>Showcasing earned badges</p>
+                </div>
+            </div>
+            <div class="courses-section">
+                <h3>Courses Enrolled</h3>
+                <p>List of ongoing courses</p>
+            </div>
+            <div class="leaderboard">
+                <h3>Leaderboard</h3>
+                <p>Rank | Name | Points</p>
+            </div>
+            <div class="active-days">
+                <h3>Active Days</h3>
+                <p>Track your active days</p>
+            </div>
         </div>
-    </section>
-</body>
+    </body>
 </html>
