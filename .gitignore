@@ -1,0 +1,11 @@
+/.vscode
+/Icon_Loop.html
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Log files
+*.log
